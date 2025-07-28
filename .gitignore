@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# 로그 디렉토리 무시
+openAI_RAG/logs/
+
+# 벡터스토어 디렉토리 무시
+openAI_RAG/vectorstore/
+
 .env
 # Distribution / packaging
 .Python
