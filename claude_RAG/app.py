@@ -13,7 +13,7 @@ def get_image_base64(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-image_base64 = get_image_base64("hd_2.png")  # ✅ 배경 이미지 파일명
+image_base64 = get_image_base64("hd_3.png")  # ✅ 배경 이미지 파일명
 
 # ------------------------ 전체 배경 스타일 적용 ------------------------
 st.markdown(f"""
@@ -22,7 +22,7 @@ st.markdown(f"""
             background-image: url("data:image/png;base64,{image_base64}");
             background-size: cover;
             background-attachment: fixed;
-            background-position: center;
+            background-position: top;
             margin: 0;
             padding: 0;
         }}
@@ -39,7 +39,7 @@ st.markdown(f"""
             padding: 30px;
             max-width: 1400px;
             width: calc(100% - 320px);  /* ✅ 사이드바 고려 */
-            margin: 100px auto;
+            margin: 130px auto;
             box-shadow: 0 0 30px rgba(0,0,0,0.1);
         }}
 
